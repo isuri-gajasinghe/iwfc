@@ -1,0 +1,266 @@
+/* ──────────────────────────────────────────────────────────────
+   IWFC Management System – Full Application Stylesheet
+   ────────────────────────────────────────────────────────────── */
+
+/* ── Palette variables (Catppuccin Mocha) ───────────────────── */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-base:        #1e1e2e;
+    -fx-background:  #1e1e2e;
+    -fx-text-fill:   #cdd6f4;
+}
+
+/* ── Root pane ──────────────────────────────────────────────── */
+.root-pane {
+    -fx-background-color: #1e1e2e;
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+.header {
+    -fx-background-color: #181825;
+}
+.header-icon {
+    -fx-font-size: 28px;
+}
+.header-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cba6f7;
+}
+.header-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #a6adc8;
+}
+
+/* ── Tab pane ───────────────────────────────────────────────── */
+.tab-pane {
+    -fx-background-color: #1e1e2e;
+    -fx-tab-min-width: 110px;
+}
+.tab-pane .tab-header-area {
+    -fx-background-color: #181825;
+    -fx-padding: 4 0 0 4;
+}
+.tab-pane .tab-header-background {
+    -fx-background-color: #181825;
+}
+.tab {
+    -fx-background-color: #313244;
+    -fx-background-radius: 6 6 0 0;
+    -fx-padding: 6 14 6 14;
+}
+.tab:selected {
+    -fx-background-color: #1e1e2e;
+}
+.tab .tab-label {
+    -fx-text-fill: #a6adc8;
+    -fx-font-size: 13px;
+}
+.tab:selected .tab-label {
+    -fx-text-fill: #cba6f7;
+    -fx-font-weight: bold;
+}
+.tab-content-area {
+    -fx-background-color: #1e1e2e;
+    -fx-border-color: transparent;
+}
+
+/* ── Section labels ─────────────────────────────────────────── */
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cba6f7;
+    -fx-padding: 0 0 4 0;
+}
+.field-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #a6adc8;
+    -fx-min-width: 100px;
+}
+
+/* ── Dashboard stat cards ───────────────────────────────────── */
+.card {
+    -fx-background-color: #313244;
+    -fx-background-radius: 10;
+    -fx-border-color: #45475a;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-padding: 16;
+}
+.card-icon {
+    -fx-font-size: 28px;
+}
+.card-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cdd6f4;
+}
+.card-count {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #a6e3a1;
+}
+.card-hint {
+    -fx-font-size: 11px;
+    -fx-text-fill: #6c7086;
+}
+
+/* ── Form panel ─────────────────────────────────────────────── */
+.form-panel {
+    -fx-background-color: #313244;
+    -fx-background-radius: 8;
+    -fx-border-color: #45475a;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 14;
+}
+
+/* ── Text inputs ────────────────────────────────────────────── */
+.text-field, .combo-box {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #cdd6f4;
+    -fx-prompt-text-fill: #6c7086;
+    -fx-border-color: #585b70;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 5 8 5 8;
+    -fx-font-size: 12px;
+}
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #cba6f7;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #cdd6f4;
+    -fx-background-color: #45475a;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: #45475a;
+    -fx-border-color: #585b70;
+}
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #585b70;
+}
+
+/* ── Buttons ────────────────────────────────────────────────── */
+.button {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #cdd6f4;
+    -fx-border-color: #585b70;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 6 16 6 16;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #585b70;
+}
+.btn-primary {
+    -fx-background-color: #cba6f7;
+    -fx-text-fill: #1e1e2e;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+.btn-primary:hover {
+    -fx-background-color: #b4a0f5;
+}
+.btn-success {
+    -fx-background-color: #a6e3a1;
+    -fx-text-fill: #1e1e2e;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+.btn-success:hover {
+    -fx-background-color: #8fd994;
+}
+.btn-warning {
+    -fx-background-color: #fab387;
+    -fx-text-fill: #1e1e2e;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+.btn-warning:hover {
+    -fx-background-color: #e89b72;
+}
+
+/* ── ListView / TableView ───────────────────────────────────── */
+.list-view, .table-view {
+    -fx-background-color: #313244;
+    -fx-border-color: #45475a;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 12px;
+}
+.list-cell {
+    -fx-background-color: #313244;
+    -fx-text-fill: #cdd6f4;
+    -fx-padding: 5 8 5 8;
+}
+.list-cell:odd {
+    -fx-background-color: #2a2a3e;
+}
+.list-cell:selected {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #cba6f7;
+}
+.table-view .column-header-background {
+    -fx-background-color: #45475a;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #cdd6f4;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+.table-row-cell {
+    -fx-background-color: #313244;
+    -fx-text-fill: #cdd6f4;
+}
+.table-row-cell:odd {
+    -fx-background-color: #2a2a3e;
+}
+.table-row-cell:selected {
+    -fx-background-color: #45475a;
+}
+.table-view .table-cell {
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 12px;
+    -fx-padding: 4 6 4 6;
+}
+
+/* ── Notification / log area ────────────────────────────────── */
+.notification-area {
+    -fx-background-color: #181825;
+    -fx-border-color: #313244;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+    -fx-font-size: 12px;
+    -fx-text-fill: #a6e3a1;
+}
+
+/* ── Status bar ─────────────────────────────────────────────── */
+.status-bar {
+    -fx-background-color: #181825;
+}
+.status-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #a6adc8;
+}
+
+/* ── Separators ─────────────────────────────────────────────── */
+.separator .line {
+    -fx-border-color: #313244;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ── Hero text (Dashboard) ───────────────────────────────────── */
+.hero-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cdd6f4;
+}
+.hero-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #a6adc8;
+}

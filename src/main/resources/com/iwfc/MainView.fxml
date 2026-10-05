@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Main application layout.
+     The TabPane is empty here; all tabs are built programmatically
+     in MainController.initialize() so all logic stays in one class. -->
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.iwfc.MainController"
+            styleClass="root-pane">
+
+    <!-- ── Top: Header bar ──────────────────────────────────────────── -->
+    <top>
+        <VBox styleClass="header">
+            <HBox alignment="CENTER_LEFT" spacing="12">
+                <padding><Insets top="14" right="24" bottom="14" left="24"/></padding>
+                <Label text="🏋" styleClass="header-icon"/>
+                <VBox spacing="2">
+                    <Label text="IWFC Management System" styleClass="header-title"/>
+                    <Label text="Intelligent Wellness and Fitness Center" styleClass="header-subtitle"/>
+                </VBox>
+            </HBox>
+            <Separator/>
+        </VBox>
+    </top>
+
+    <!-- ── Centre: TabPane (filled by MainController) ───────────────── -->
+    <center>
+        <TabPane fx:id="mainTabPane" tabClosingPolicy="UNAVAILABLE"
+                 styleClass="tab-pane"/>
+    </center>
+
+    <!-- ── Bottom: Status bar ───────────────────────────────────────── -->
+    <bottom>
+        <VBox>
+            <Separator/>
+            <HBox styleClass="status-bar" alignment="CENTER_LEFT" spacing="8">
+                <padding><Insets top="6" right="16" bottom="6" left="16"/></padding>
+                <Label fx:id="statusLabel" styleClass="status-label"/>
+            </HBox>
+        </VBox>
+    </bottom>
+
+</BorderPane>

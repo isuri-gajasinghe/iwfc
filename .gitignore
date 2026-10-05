@@ -1,0 +1,53 @@
+# ──────────────────────────────────────────────────────────────
+# IWFC Management System – .gitignore
+# ──────────────────────────────────────────────────────────────
+
+# Maven build output
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# ── IDE: IntelliJ IDEA ──────────────────────────────────────
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ── IDE: VS Code ─────────────────────────────────────────────
+.vscode/
+*.code-workspace
+
+# ── OS-specific ──────────────────────────────────────────────
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+hs_err_pid*.log
+replay_pid*.log
